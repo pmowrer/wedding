@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Teko', sans-serif;
+}
+
+.parallax {
+  perspective: 300px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-image {
+  z-index: 1;
+  background-size: cover;
+  transform: translateZ(-300px) scale(2);
+}
+
+.intro {
+  z-index: 2;
+}
+
+.intro .parallax__layer {
+  background: white;
+}
+
+.w11 .bg-image {
+  z-index: 1;
+  background-image: url('./w11.jpg');
+}
+
+.bank .bg-image {
+  z-index: 1;
+  background-image: url('./bank.jpg');
+}
+
+.nav {
+  z-index: 2;
+  transform: translateZ(-120px) translateY(80px) scale(1.4);
+}
+
+.nav ul {
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 30px 100px 0 0;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 1px 2px 0 rgba(0, 0, 0, 0.5)
+}
