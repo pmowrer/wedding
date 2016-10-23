@@ -7,6 +7,10 @@ body {
   font-family: 'Teko', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .parallax {
   perspective: 300px;
   height: 100vh;
@@ -74,7 +78,15 @@ body {
 .nav ul li {
   display: inline-block;
   margin: 0 10px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 1px 2px 0 rgba(0, 0, 0, 0.5)
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 1px 2px 0 rgba(0, 0, 0, 0.5);
+  transition: all ease-in 0.1s;
+}
+
+.nav ul li:hover, .nav ul li:focus {
+  outline: 0;
+  transform: scale(1.1);
+  color: #e0d69b;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 1px 2px 0 rgba(0, 0, 0, 0.8);
 }
 
 .card {
@@ -89,15 +101,44 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Cormorant SC', serif;
-  font-size: 40px;
-  text-align: center;
-  color: #575256;
   border: 3px solid #ae9169;
   padding: 40px;
+  text-align: center;
+}
+
+.card-content > header {
+  font-family: 'Cormorant SC', serif;
+  font-size: 40px;
+  color: #555;
 }
 
 h1 {
   font-size: 60px;
   margin-bottom: 40px;
+}
+
+.instagram {
+  margin-top: 50px;
+}
+
+.instagram header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.instagram-tag {
+  font-family: 'Satisfy', 'sans-serif';
+  color: #333;
+  font-size: 30px;
+}
+
+#instafeed img {
+  max-width: 200px;
+  border: 1px solid #333;
+}
+
+#instafeed a:not(:first-child):not(:last-child) {
+  margin: 0 20px;
 }

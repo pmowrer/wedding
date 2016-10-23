@@ -3,7 +3,20 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="parallax.css" rel="stylesheet">
+
+    <script type="text/javascript" src="instafeed-1.4.1.min.js"></script>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        get: 'user',
+        userId: 3894291568,
+        accessToken: '3894291568.1677ed0.61725e3febe34aefa544c00c2efbfff6',
+        resolution: 'low_resolution',
+        limit: '3',
+        sortBy: 'most-recent',
+      }).run();
+    </script>
   </head>
 
   <body>
@@ -22,22 +35,37 @@
         </div>
       </div>
 
-
       <div class="parallax__group intro">
         <div class="parallax__layer">
           <div class="card">
             <div class="card-content">
-              <h1>
-                Elizabeth Brette Allen<br />
-                &<br />
-                Patrick Mowrer
-              </h1>
-              <p>
-                Tying the knot
-              </p>
-              <p>
-                February 25th, 2017
-              </p>
+              <header>
+                <h1>
+                  Brette Allen<br />
+                  &<br />
+                  Patrick Mowrer
+                </h1>
+
+                <div>Tying the knot</div>
+                <div>February 25th, 2017</div>
+              </header>
+
+              <div class="instagram">
+                <header>
+                  <a href="https://www.instagram.com/gettingmowrerd/">
+                    <img src="instagram.png" />
+                  </a>
+
+                  <a
+                    class="instagram-tag"
+                    href="https://www.instagram.com/explore/tags/gettingmowrerd/"
+                  >
+                    #gettingmowrerd
+                  </a>
+                </header>
+
+                <div id="instafeed"></div>
+              </div>
             </div>
           </div>
         </div>
