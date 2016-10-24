@@ -16,6 +16,23 @@ a {
   text-align: center;
 }
 
+.x4 {
+  height: 400vh;
+}
+
+#group1 {
+  z-index: 2;
+}
+
+#group2 {
+  z-index: 3;
+  transform: translateY(33.333%);
+}
+
+#group3 {
+  z-index: 1;
+}
+
 .bg-image {
   z-index: 1;
   background-size: cover;
@@ -24,14 +41,9 @@ a {
   transform: translateZ(-300px) scale(2);
 }
 
-.intro {
-  z-index: 2;
-}
-
 .palms {
   background-image: url('./palmbg.jpg');
-  background-size: 322px 402px; /* Compensate for transform scaling. */
-  transform: translateZ(-100px) translateY(6.667%) scale(1.3333, 0.8);
+  transform: translateZ(-100px) scale(1.3333);
   border: 1px solid #666;
 }
 
@@ -43,7 +55,8 @@ a {
 .bank {
   z-index: 1;
   background-image: url('./bank.jpg');
-  transform: translateZ(-300px) scale(2) translateY(6.667%);
+  background-size: 100%;
+  transform: translateZ(-6000px) scale(21) translateY(35%)
 }
 
 .nav {
@@ -73,15 +86,19 @@ a {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 1px 2px 0 rgba(0, 0, 0, 0.8);
 }
 
-.card {
+.center-content {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.card {
   background-color: #fff;
   border: 5px solid #ae9169;
   padding: 40px;
   opacity: 0.93;
-  transform: translateY(40%) translateZ(0);
+  box-shadow: 1px 1px 7px 3px rgba(50,50,50,0.5);
+  transform: translateZ(0);
 }
 
 .card-content {
