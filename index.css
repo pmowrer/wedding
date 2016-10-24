@@ -5,10 +5,15 @@
 
 body {
   font-family: 'Teko', sans-serif;
+  background-color: #fff;
 }
 
 a {
   text-decoration: none;
+}
+
+.parallax__layer {
+  text-align: center;
 }
 
 .bg-image {
@@ -23,22 +28,22 @@ a {
   z-index: 2;
 }
 
-.intro .parallax__layer {
+.palms {
   background-image: url('./palmbg.jpg');
+  background-size: 322px 402px; /* Compensate for transform scaling. */
+  transform: translateZ(-100px) translateY(6.667%) scale(1.3333, 0.8);
   border: 1px solid #666;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.w11 .bg-image {
+.w11 {
   z-index: 1;
   background-image: url('./w11.jpg');
 }
 
-.bank .bg-image {
+.bank {
   z-index: 1;
   background-image: url('./bank.jpg');
+  transform: translateZ(-300px) scale(2) translateY(6.667%);
 }
 
 .nav {
@@ -69,10 +74,14 @@ a {
 }
 
 .card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   border: 5px solid #ae9169;
   padding: 40px;
   opacity: 0.93;
+  transform: translateY(40%) translateZ(0);
 }
 
 .card-content {
