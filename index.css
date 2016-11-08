@@ -22,15 +22,17 @@ a {
 
 #group1 {
   z-index: 2;
+  top: 0;
 }
 
 #group2 {
   z-index: 3;
-  transform: translateY(33.333%);
+  top: 100vh;
 }
 
 #group3 {
   z-index: 1;
+  top: 200vh;
 }
 
 .bg-image {
@@ -43,7 +45,7 @@ a {
 
 .palms {
   background-image: url('./palmbg.jpg');
-  transform: translateZ(-100px) scale(1.3333);
+  transform: translateZ(-100px) scale(1.3333) translateY(25%);
   border: 1px solid #666;
 }
 
