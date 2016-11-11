@@ -16,6 +16,10 @@ a {
   text-align: center;
 }
 
+.x2 {
+  height: 200vh;
+}
+
 .x4 {
   height: 400vh;
 }
@@ -35,12 +39,15 @@ a {
   top: 200vh;
 }
 
+#group4 {
+  z-index: 2;
+  top: 600vh;
+}
+
 .bg-image {
   z-index: 1;
   background-size: cover;
-  background-position: 50% 0;
   background-repeat: no-repeat;
-  transform: translateZ(-300px) scale(2);
 }
 
 .palms {
@@ -50,15 +57,44 @@ a {
 }
 
 .w11 {
-  z-index: 1;
   background-image: url('./w11.jpg');
+  transform: translateZ(-300px) scale(2);
 }
 
 .bank {
-  z-index: 1;
   background-image: url('./bank.jpg');
   background-size: 100%;
-  transform: translateZ(-6000px) scale(21) translateY(35%)
+  transform: translateZ(-6000px) scale(21) translateY(3.333%);
+}
+
+.pool {
+  transform: translateZ(-3000px) scale(13) translateY(66.666%);
+}
+
+.vizcaya {
+  background-image: url('./vizcaya.jpg');
+  background-size: cover;
+  background-position-x: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  filter: blur(2.5px);
+}
+
+.fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.4),
+      rgba(255,255,255,0.6)
+    );
 }
 
 .nav {
@@ -100,7 +136,7 @@ a {
   padding: 40px;
   opacity: 0.93;
   box-shadow: 1px 1px 7px 3px rgba(50,50,50,0.5);
-  transform: translateZ(0);
+  transform: translateZ(0) translateY(300px);
 }
 
 .card-content {
