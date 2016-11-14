@@ -12,16 +12,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .parallax__layer {
   text-align: center;
-}
-
-.x2 {
-  height: 200vh;
-}
-
-.x4 {
-  height: 400vh;
 }
 
 #group1 {
@@ -87,12 +83,12 @@ a {
   transform: translateZ(-400px) scale(2.333) translateY(87%);
 }
 
-#accomodations {
+#accomodations2 {
   transform: translateZ(-600px) scale(3) translateY(-10%);
 }
 
 #events {
-  transform: translateZ(-200px) scale(2) translateY(70%);
+  transform: translateZ(-200px) scale(1.667) translateY(90%);
 }
 
 .pool {
@@ -118,7 +114,7 @@ a {
 }
 
 .glass {
-  filter: blur(2.5px);
+  /*filter: blur(2.5px);*/
 }
 
 .frost {
@@ -128,11 +124,7 @@ a {
   top: 0;
   bottom: 0;
   z-index: 2;
-  background-image:
-    radial-gradient(
-      rgba(255,255,255,0.4),
-      rgba(255,255,255,0.6)
-    );
+  background-color: rgba(255, 2555, 255, 0.6);
 }
 
 .nav {
@@ -169,6 +161,7 @@ a {
 }
 
 .card {
+  max-width: 80%;
   background-color: #fff;
   border: 5px solid #ae9169;
   padding: 40px;
@@ -190,10 +183,10 @@ a {
   font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif
 }
 
-.card-content > header {
+.card-content header {
   font-family: 'Cormorant SC', serif;
-  font-size: 40px;
   color: #555;
+  font-size: 40px;
 }
 
 .card-content > p {
@@ -208,6 +201,44 @@ h1 {
   font-size: 60px;
   margin-bottom: 40px;
 }
+
+h2 {
+  font-size: 40px;
+}
+
+/*******************************/
+/** Events list                */
+/*******************************/
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -30px;
+}
+
+.events-list li {
+  width: 440px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.events-list .location {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.events-list p {
+  text-align: justify;
+}
+
+.events-list p + p {
+  margin-top: 20px;
+}
+
+/*******************************/
+/** Instagram                  */
+/*******************************/
 
 .instagram {
   margin-top: 50px;
