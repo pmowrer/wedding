@@ -80,15 +80,28 @@ ul {
 }
 
 .z2 {
-  transform: translateZ(-400px) scale(2.333) translateY(87%);
+  height: 200vh;
+  transform: translateZ(-400px) scale(2.333) translateY(60%);
+}
+
+#intro .card {
+  transform: translateZ(0) translateY(300px);
 }
 
 #accomodations2 {
   transform: translateZ(-600px) scale(3) translateY(-10%);
 }
 
+#accomodations2 .card {
+  transform: translateZ(0) translateY(300px);
+}
+
 #events {
   transform: translateZ(-200px) scale(1.667) translateY(90%);
+}
+
+#events .card {
+  transform: translateZ(0) translateY(1000px);
 }
 
 .pool {
@@ -167,7 +180,6 @@ ul {
   padding: 40px;
   opacity: 0.93;
   box-shadow: 1px 1px 7px 3px rgba(50,50,50,0.5);
-  transform: translateZ(0) translateY(300px);
 }
 
 .card-content {
@@ -218,17 +230,21 @@ h2 {
 }
 
 .events-list li {
-  width: 440px;
+  flex: 1 1;
+  min-width: 400px;
+  max-width: 600px;
   font-size: 20px;
   margin-bottom: 40px;
+  padding: 0 15px;
 }
 
 .events-list .location {
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 0 15px 0;
 }
 
 .events-list p {
+  line-height: 1.4;
   text-align: justify;
 }
 
