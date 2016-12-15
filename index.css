@@ -23,26 +23,31 @@ ul {
 #group1 {
   z-index: 2;
   top: 0;
+  height: 133.333vh;
 }
 
 #group2 {
   z-index: 3;
-  top: 100vh;
+  top: 133.333vh;
+  height: 133.333vh;
 }
 
 #group3 {
   z-index: 1;
-  top: 200vh;
+  top: 266.666vh;
+  height: 400vh
 }
 
 #group4 {
   z-index: 2;
-  top: 600vh;
+  top: 666.666vh;
+  height: 200vh;
 }
 
 #group5 {
-  top: 700vh;
+  top: 866.666vh;
   z-index: 3;
+  height: 400vh;
 }
 
 .bg-image {
@@ -56,23 +61,27 @@ ul {
 }
 
 .palms {
-  transform: translateZ(-100px) scale(1.34) translateY(25%);
+  height: 100vh;
+  transform: translateZ(-100px) scale(1.333);
   border: 1px solid #666;
 }
 
 .w11 {
+  height: 100vh;
   background-image: url('./w11.jpg');
   transform: translateZ(-300px) scale(2);
 }
 
 .bank {
+  height: 100vh;
   background-image: url('./bank.jpg');
   background-size: 100%;
-  transform: translateZ(-6000px) scale(21) translateY(3.333%);
+  transform: translateZ(-6000px) scale(21);
 }
 
 .z3 {
-  transform: translateZ(-900px) scale(4) translateY(17%);
+  height: 100vh;
+  transform: translateZ(-900px) scale(4);
 }
 
 .z25 {
@@ -81,23 +90,23 @@ ul {
 
 .z2 {
   height: 200vh;
-  transform: translateZ(-400px) scale(2.333) translateY(60%);
+  transform: translateZ(-400px) scale(2.333) translateY(22%);
 }
 
 #intro .card {
-  transform: translateZ(0) translateY(300px);
+  transform: translateZ(0) translateY(-17%);
 }
 
 #accomodations2 {
-  transform: translateZ(-600px) scale(3) translateY(-10%);
+  transform: translateZ(-600px) scale(3) translateY(-30%);
 }
 
 #accomodations2 .card {
-  transform: translateZ(0) translateY(300px);
+  transform: translateZ(0) translateY(60%);
 }
 
 #events {
-  transform: translateZ(-200px) scale(1.667) translateY(90%);
+  transform: translateZ(-200px) scale(1.667) translateY(-30%);
 }
 
 #events .card {
@@ -113,6 +122,7 @@ ul {
   right: 0;
   top: 0;
   bottom: 0;
+  height: 100vh;
 }
 
 .vizcaya {
