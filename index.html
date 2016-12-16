@@ -31,24 +31,34 @@
   </head>
 
   <body>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="#group2" onclick="scrollTo('#group2')(event)">
+            Welcome
+          </a>
+        </li>
+        <li>
+          <a href="#group4" onclick="scrollTo('#group4')(event)">
+            Accomodations</a>
+        </li>
+        <li>
+          <a href="#group5" onclick="scrollTo('#group5')(event)">
+            Events
+          </a>
+        </li>
+        <li>
+          <a href="#registry">
+            Registry
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <div class="parallax">
 
       <div class="parallax__group near" id="group1">
         <div class="parallax__layer h1 bg-image w11"></div>
-
-        <div class="parallax__layer nav">
-          <ul>
-            <li>
-              <a href="#accomodations">Accomodations</a>
-            </li>
-            <li>
-              <a href="#events">Events</a>
-            </li>
-            <li>
-              <a href="#registry">Registry</a>
-            </li>
-          </ul>
-        </div>
       </div>
 
       <div class="parallax__group near" id="group2">
@@ -94,12 +104,12 @@
       </div>
 
       <div class="parallax__group mid" id="group4">
-        <div class="parallax__layer h1 z3" id="accomodations">
+        <div class="parallax__layer h1 z3">
           <div class="frost"></div>
           <div class="bg-image pool"></div>
         </div>
 
-        <div class="parallax__layer h1 center-content" id="accomodations2">
+        <div class="parallax__layer h1 center-content" id="accomodations">
           <div class="card center-content palms-bg">
             <div class="card-content">
               <header>
@@ -125,46 +135,55 @@
           <div class="bg-image vizcaya"></div>
         </div>
 
-        <div class="parallax__layer center-content" id="events">
+        <div class="parallax__layer h1 center-content" id="events">
           <div class="card center-content palms-bg">
             <div class="card-content">
               <header>
                 <h1>Events</h1>
               </header>
+
               <ul class="events-list">
                 <li>
                   <header>
                     <h2>Welcome Cocktails</h2>
                   </header>
+
                   <div class="location">
                     <div>Friday, February 24th</div>
                     <div>The Surfcomber Hotel, Poolside</div>
                     <div>6PM - 8PM</div>
                   </div>
+
                   <p>To welcome you to our wedding, Dorothy Allen, Grandmother of the Bride, will be hosting a cocktail party. Please join us to raise a glass to the weekend!</p>
                   <p>Attire: Cocktail party chic.</p>
                 </li>
+
                 <li>
                   <header>
                     <h2>Rehersal Dinner</h2>
                   </header>
+
                   <div class="location">
                     <div>Friday, February 24th</div>
                     <div>Juvia Restaurant</div>
                     <div>8:15PM - 10PM</div>
                   </div>
+
                   <p>​Father of the Groom, Jacques Mowrer, and Mother of the Groom, Kerstin Brunnström, welcome the wedding party to dine at Juvia Restaurant.</p>
                   <p>Attire: Cocktail party chic.</p>
                 </li>
+
                 <li>
                   <header>
                     <h2>The Wedding</h2>
                   </header>
+
                   <div class="location">
                     <div>Saturday, February 25th</div>
                     <div>Vizcaya Museum &amp; Gardens</div>
                     <div>6:30PM - 12:30/1AM</div>
                   </div>
+
                   <p>The ceremony will begin at 6:30PM at Vizcaya Museum &amp; Gardens. To make getting there easy, buses will be waiting at The Surcomber to take you to the venue. Please be outside Surfcomber at 5:15pm sharp to hop on the bus!</p>
                   <p>Attire: Black tie optional.</p>
                 </li>
@@ -177,4 +196,14 @@
       <div id="registry"></div>
     </div>
   </body>
+
+  <script type="text/javascript" src="smoothscroll-0.3.4.js"></script>
+  <script type="text/javascript">
+    function scrollTo(anchor) {
+      return function(event) {
+        event.preventDefault();
+        document.querySelector(anchor).scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
 </html>

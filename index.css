@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: initial;
+}
+
 ul {
   list-style: none;
 }
@@ -20,10 +24,10 @@ ul {
   text-align: center;
 }
 
-/* ----- SIZING ----- */
+/* ----- HEIGHTS ----- */
 .parallax__group.near {
-  height: calc(400vh / 3);
   height: 133.333vh;
+  height: calc(400vh / 3);
 }
 
 .parallax__group.mid {
@@ -50,26 +54,26 @@ ul {
 
 #group2 {
   z-index: 3;
-  top: calc(400vh / 3);
   top: 133.333vh;
+  top: calc(400vh / 3);
 }
 
 #group3 {
   z-index: 1;
-  top: calc(800vh / 3);
   top: 266.666vh;
+  top: calc(800vh / 3);
 }
 
 #group4 {
   z-index: 2;
-  top: calc(2000vh / 3);
   top: 666.666vh;
+  top: calc(2000vh / 3);
 }
 
 #group5 {
   z-index: 3;
-  top: calc(2600vh / 3);
   top: 866.666vh;
+  top: calc(2600vh / 3);
 }
 
 /* ----- BACKGROUND IMAGES ----- */
@@ -102,17 +106,13 @@ ul {
   transform: translateZ(-6000px) scale(21);
 }
 
+/* ----- 3D ----- */
 .z3 {
   transform: translateZ(-900px) scale(4);
 }
 
-.z25 {
-  transform: translateZ(-700px) scale(3.333) translateY(6%);
-}
-
 .z2 {
-  height: 200vh;
-  transform: translateZ(-400px) scale(2.333) translateY(22%);
+  transform: translateZ(-400px) scale(calc(7 / 3)) translateY(22%);
 }
 
 #intro .card {
@@ -124,7 +124,7 @@ ul {
 }
 
 #events {
-  transform: translateZ(-200px) scale(1.667) translateY(-30%);
+  transform: translateZ(-200px) scale(calc(5 / 3)) translateY(-60%);
 }
 
 #events .card {
@@ -161,34 +161,45 @@ ul {
   top: 0;
   bottom: 0;
   z-index: 2;
-  background-color: rgba(255, 2555, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
+/* ----- Navigation ----- */
+
 .nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
   z-index: 2;
-  transform: translateZ(-120px) translateY(80px) scale(1.4);
 }
 
 .nav ul {
-  color: white;
-  font-size: 36px;
-  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #e0d69b;
+  font-family: 'Satisfy', 'sans-serif';
+  font-size: 28px;
   text-align: right;
-  margin: 30px 100px 0 0;
+  margin: 0;
+  padding: 5px 20px;
+  border: 1px solid #ae9169;
+  border-top: none;
 }
 
 .nav ul li {
   display: inline-block;
   margin: 0 10px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 1px 2px 0 rgba(0, 0, 0, 0.5);
-  transition: all ease-in 0.1s;
+  color: #7d613b;
 }
 
-.nav ul li:hover, .nav ul li:focus {
+.nav ul li a:active,
+.nav ul li a:visited {
+  color: #7d613b;
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
   outline: 0;
-  transform: scale(1.1);
-  color: #e0d69b;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 1px 2px 0 rgba(0, 0, 0, 0.8);
 }
 
 .center-content {
