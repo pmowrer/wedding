@@ -77,10 +77,6 @@ ul {
   background-repeat: no-repeat;
 }
 
-.image-layer {
-  height: 100vh;
-}
-
 .palms-bg {
   background-image: url('./palmbg.jpg');
 }
@@ -104,7 +100,6 @@ ul {
 }
 
 .z3 {
-  height: 100vh;
   transform: translateZ(-900px) scale(4);
 }
 
@@ -122,11 +117,7 @@ ul {
 }
 
 #accomodations2 {
-  transform: translateZ(-600px) scale(3) translateY(-30%);
-}
-
-#accomodations2 .card {
-  transform: translateZ(0) translateY(60%);
+  transform: translateZ(-600px) scale(3));
 }
 
 #events {
