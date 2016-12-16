@@ -20,8 +20,7 @@ ul {
   text-align: center;
 }
 
-/* ----- POSITIONING ----- */
-
+/* ----- SIZING ----- */
 .parallax__group.near {
   height: calc(400vh / 3);
   height: 133.333vh;
@@ -35,6 +34,15 @@ ul {
   height: 400vh;
 }
 
+.h1 {
+  height: 100vh;
+}
+
+.h2 {
+  height: 200vh;
+}
+
+/* ----- POSITIONING ----- */
 #group1 {
   z-index: 2;
   top: 0;
@@ -42,31 +50,26 @@ ul {
 
 #group2 {
   z-index: 3;
+  top: calc(400vh / 3);
   top: 133.333vh;
 }
 
 #group3 {
   z-index: 1;
+  top: calc(800vh / 3);
   top: 266.666vh;
 }
 
 #group4 {
   z-index: 2;
+  top: calc(2000vh / 3);
   top: 666.666vh;
 }
 
 #group5 {
   z-index: 3;
+  top: calc(2600vh / 3);
   top: 866.666vh;
-}
-
-/* ----- SIZING ----- */
-.h1 {
-  height: 100vh;
-}
-
-.h2 {
-  height: 200vh;
 }
 
 /* ----- BACKGROUND IMAGES ----- */
@@ -117,7 +120,7 @@ ul {
 }
 
 #accomodations2 {
-  transform: translateZ(-600px) scale(3));
+  transform: translateZ(-600px) scale(3);
 }
 
 #events {
