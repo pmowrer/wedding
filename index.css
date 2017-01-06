@@ -119,7 +119,6 @@ ul {
 .bank {
   height: 100vh;
   background-image: url('./bank.jpg');
-  background-size: 100%;
   transform: translateZ(-6000px) scale(21);
 }
 
@@ -132,20 +131,12 @@ ul {
   transform: translateZ(-400px) scale(calc(7 / 3)) translateY(22%);
 }
 
-#intro .card {
-  transform: translateZ(0) translateY(-17%);
-}
-
 #accomodations2 {
   transform: translateZ(-600px) scale(3);
 }
 
 #events {
-  transform: translateZ(-200px) scale(calc(5 / 3)) translateY(-60%);
-}
-
-#events .card {
-  transform: translateZ(0) translateY(100%);
+  transform: translateZ(-200px) scale(calc(5 / 3)) translateY(50%);
 }
 
 .pool {
@@ -333,6 +324,7 @@ h2 {
 }
 
 #instafeed img {
+  width: 30%;
   max-width: 200px;
   border: 1px solid #333;
 }
