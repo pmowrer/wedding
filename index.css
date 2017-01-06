@@ -76,6 +76,17 @@ ul {
   top: calc(2600vh / 3);
 }
 
+#group6 {
+  z-index: 3;
+  top: 1066.666vh;
+  top: calc(3200vh / 3);
+}
+
+#events-anchor {
+  position: relative;
+  top: 20%;
+}
+
 /* ----- BACKGROUND IMAGES ----- */
 
 .bg-image {
@@ -88,10 +99,16 @@ ul {
   background-image: url('./palmbg.jpg');
 }
 
-.palms {
-  height: 100vh;
-  transform: translateZ(-100px) scale(1.333);
+.palms-border {
   border: 1px solid #666;
+}
+
+.palms-welcome {
+  transform: translateZ(-100px) scale(1.333);
+}
+
+.palms-end {
+  transform: translateY(300vh);
 }
 
 .w11 {
@@ -128,7 +145,7 @@ ul {
 }
 
 #events .card {
-  transform: translateZ(0) translateY(1000px);
+  transform: translateZ(0) translateY(100%);
 }
 
 .pool {
@@ -192,6 +209,7 @@ ul {
   color: #7d613b;
 }
 
+.nav ul li a,
 .nav ul li a:active,
 .nav ul li a:visited {
   color: #7d613b;
@@ -223,6 +241,7 @@ ul {
   align-items: center;
   justify-content: center;
   border: 3px solid #ae9169;
+  max-width: 1000px;
   padding: 40px;
   text-align: center;
   color: #444;
@@ -265,12 +284,15 @@ h2 {
 }
 
 .events-list li {
-  flex: 1 1;
-  min-width: 400px;
-  max-width: 600px;
+  flex: 1 0 400px;
+  max-width: 500px;
   font-size: 20px;
   margin-bottom: 40px;
-  padding: 0 15px;
+  padding: 0 20px;
+}
+
+.events-list img {
+  width: 100%;
 }
 
 .events-list .location {
@@ -279,8 +301,10 @@ h2 {
 }
 
 .events-list p {
+  font-size: 17px;
   line-height: 1.4;
-  text-align: justify;
+  text-align: left;
+  margin-top: 10px;
 }
 
 .events-list p + p {
