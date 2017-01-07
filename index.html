@@ -37,21 +37,21 @@
     <div class="nav">
       <ul>
         <li>
-          <a href="#group2" onclick="scrollTo('#group2')(event)">
+          <a href="#group2" onclick="scrollToAnchor('#group2')(event)">
             Welcome
           </a>
         </li>
         <li>
-          <a href="#group4" onclick="scrollTo('#group4')(event)">
+          <a href="#group4" onclick="scrollToAnchor('#group4')(event)">
             Accomodations</a>
         </li>
         <li>
-          <a href="#events-anchor" onclick="scrollTo('#events-anchor')(event)">
+          <a href="#events-anchor" onclick="scrollToAnchor('#events-anchor')(event)">
             Events
           </a>
         </li>
         <li>
-          <a href="#group6" onclick="scrollTo('#group6')(event)">
+          <a href="#group6" onclick="scrollToAnchor('#group6')(event)">
             Transportation
           </a>
         </li>
@@ -238,10 +238,10 @@
 
   <script type="text/javascript" src="smoothscroll-0.3.4.js"></script>
   <script type="text/javascript">
-    function scrollTo(anchor) {
+    function scrollToAnchor(name) {
       return function(event) {
         event.preventDefault();
-        document.querySelector(anchor).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(name).scrollIntoView({ behavior: 'smooth' });
       }
     }
   </script>
