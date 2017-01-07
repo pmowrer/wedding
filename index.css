@@ -76,12 +76,6 @@ ul {
   top: calc(2600vh / 3);
 }
 
-#group6 {
-  z-index: 3;
-  top: 1066.666vh;
-  top: calc(3200vh / 3);
-}
-
 #events-anchor {
   position: relative;
   top: 20%;
