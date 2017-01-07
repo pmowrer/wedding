@@ -122,7 +122,7 @@ ul {
 }
 
 .z2 {
-  transform: translateZ(-400px) scale(calc(7 / 3)) translateY(22%);
+  transform: translateZ(-400px) scale(2.333333333) translateY(22%);
 }
 
 #accomodations2 {
@@ -130,7 +130,7 @@ ul {
 }
 
 #events {
-  transform: translateZ(-200px) scale(calc(5 / 3)) translateY(50%);
+  transform: translateZ(-200px) scale(1.666666667) translateY(50%);
 }
 
 .pool {
