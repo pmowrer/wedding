@@ -201,14 +201,14 @@ ul {
   font-size: 1.75rem;
   text-align: right;
   margin: 0;
-  padding: 5px 20px;
+  padding: .3125rem 1.25rem;
   border: 1px solid #ae9169;
   border-top: none;
 }
 
 .nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 .625rem;
   color: #7d613b;
 }
 
@@ -230,10 +230,10 @@ ul {
 }
 
 .card {
-  max-width: 80%;
+  max-width: 75%;
   background-color: #fff;
   border: 5px solid #ae9169;
-  padding: 40px;
+  padding: 2.5rem;
   opacity: 0.93;
   box-shadow: 1px 1px 7px 3px rgba(50,50,50,0.5);
 }
@@ -244,8 +244,8 @@ ul {
   align-items: center;
   justify-content: center;
   border: 3px solid #ae9169;
-  max-width: 1000px;
-  padding: 40px;
+  max-width: 62.5rem;
+  padding: 2.5rem;
   text-align: center;
   color: #444;
   background-color: #fff;
@@ -253,11 +253,11 @@ ul {
 }
 
 .card-content p {
-  max-width: 600px;
+  max-width: 37.5rem;
   text-align: left;
   font-size: 1.25rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 h1, h2, h3, h4 {
@@ -267,17 +267,17 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 3.75rem;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 h3 {
   font-size: 1.6rem;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
 }
 
 /*******************************/
@@ -288,15 +288,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0 -30px;
+  margin: 0 -1.875rem;
 }
 
 .events-list li {
-  flex: 1 0 400px;
-  max-width: 500px;
-  font-size: 1.25rem;
-  margin-bottom: 40px;
-  padding: 0 20px;
+  flex: 1 0 25rem;
+  max-width: 31.25rem;
+  margin-bottom: 2.5rem;
+  padding: 0 1.25rem;
 }
 
 .events-list img {
@@ -304,19 +303,19 @@ h3 {
 }
 
 .events-list .location {
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 10px 0 15px 0;
+  margin: .625rem 0 1rem 0;
 }
 
 .events-list p {
-  font-size: 1.1rem;
   line-height: 1.4;
   text-align: left;
-  margin-top: 10px;
+  margin-top: .625rem;
 }
 
 .events-list p + p {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 /*******************************/
@@ -324,10 +323,14 @@ h3 {
 /*******************************/
 
 .instagram header {
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.instagram-logo {
+  max-width: 12rem;
 }
 
 .instagram-tag {
@@ -337,13 +340,12 @@ h3 {
 }
 
 #instafeed img {
-  width: 30%;
-  max-width: 200px;
+  max-width: 28%;
   border: 1px solid #333;
 }
 
 #instafeed a:not(:first-child):not(:last-child) {
-  margin: 0 20px;
+  margin: 0 1.25rem;
 }
 
 /*******************************/
@@ -358,7 +360,7 @@ h3 {
 }
 
 #things-to-do section {
-  margin: 20px 0 10px 0;
+  margin: 1.25rem 0 .625rem 0;
 }
 
 #things-to-do h2 {
