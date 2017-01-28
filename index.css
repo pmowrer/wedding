@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: #fff;
 }
@@ -194,7 +198,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.75);
   color: #e0d69b;
   font-family: 'Satisfy', 'sans-serif';
-  font-size: 28px;
+  font-size: 1.75rem;
   text-align: right;
   margin: 0;
   padding: 5px 20px;
@@ -251,7 +255,7 @@ ul {
 .card-content p {
   max-width: 600px;
   text-align: left;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -262,17 +266,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
@@ -290,7 +294,7 @@ h3 {
 .events-list li {
   flex: 1 0 400px;
   max-width: 500px;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 40px;
   padding: 0 20px;
 }
@@ -305,7 +309,7 @@ h3 {
 }
 
 .events-list p {
-  font-size: 17px;
+  font-size: 1.1rem;
   line-height: 1.4;
   text-align: left;
   margin-top: 10px;
@@ -329,7 +333,7 @@ h3 {
 .instagram-tag {
   font-family: 'Satisfy', 'sans-serif';
   color: #333;
-  font-size: 30px;
+  font-size: 1.9rem;
 }
 
 #instafeed img {
@@ -350,7 +354,7 @@ h3 {
 }
 
 #things-to-do h1 + p {
-  font-size: 26px;
+  font-size: 1.65rem;
 }
 
 #things-to-do section {
