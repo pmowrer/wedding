@@ -45,6 +45,14 @@ ul {
   height: 200vh;
 }
 
+.h3 {
+  height: 300vh;
+}
+
+.h4 {
+  height: 400vh;
+}
+
 /* ----- POSITIONING ----- */
 #group1 {
   z-index: 2;
@@ -75,9 +83,20 @@ ul {
   top: calc(2600vh / 3);
 }
 
+#group6 {
+  z-index: 3;
+  top: 1266.666vh;
+  top: calc(3800vh / 3);
+  transform: translateY(-15%);
+}
+
 #events-anchor {
   position: relative;
   top: 20%;
+}
+
+#things-to-do {
+  top: 100vh;
 }
 
 /* ----- BACKGROUND IMAGES ----- */
@@ -98,10 +117,6 @@ ul {
 
 .palms-welcome {
   transform: translateZ(-100px) scale(1.333);
-}
-
-.palms-end {
-  transform: translateY(300vh);
 }
 
 .w11 {
@@ -233,18 +248,17 @@ ul {
   font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif
 }
 
-.card-content header {
-  font-family: 'Cormorant SC', serif;
-  color: #555;
-  font-size: 40px;
-}
-
-.card-content > p {
+.card-content p {
   max-width: 600px;
   text-align: left;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant SC', serif;
+  color: #555;
 }
 
 h1 {
@@ -254,6 +268,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 /*******************************/
@@ -299,10 +319,6 @@ h2 {
 /** Instagram                  */
 /*******************************/
 
-.instagram {
-  margin-top: 50px;
-}
-
 .instagram header {
   height: 100px;
   display: flex;
@@ -324,4 +340,24 @@ h2 {
 
 #instafeed a:not(:first-child):not(:last-child) {
   margin: 0 20px;
+}
+
+/*******************************/
+/** Things to do               */
+/*******************************/
+#things-to-do {
+  align-items: flex-start;
+}
+
+#things-to-do h1 + p {
+  font-size: 26px;
+}
+
+#things-to-do section {
+  margin: 20px 0 10px 0;
+}
+
+#things-to-do h2 {
+  border-top: 1px solid #ae9169;
+  border-bottom: 1px solid #ae9169;
 }
