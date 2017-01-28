@@ -7,6 +7,38 @@ html {
   font-size: 100%;
 }
 
+/* ----- Portrait devices ----- */
+@media (max-width: 320px) and (orientation: portrait) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 400px) and (orientation: portrait) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) and (orientation: portrait) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* ----- Landscape devices ----- */
+@media (max-width: 600px) and (orientation: landscape) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) and (orientation: landscape) {
+  html {
+    font-size: 8px;
+  }
+}
+
 body {
   background-color: #fff;
 }
